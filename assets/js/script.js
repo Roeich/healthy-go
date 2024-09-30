@@ -31,4 +31,19 @@ $(document).ready(function() {
         nav:true,
         dots:false
     });
+
+    setTimeout(function() {
+        $('.owl-prev').attr({
+          'aria-label': 'Previous slide',
+          'tabindex': '0' // Make it focusable if it is not already
+        });
+    
+        $('.owl-next').attr({
+          'aria-label': 'Next slide',
+          'tabindex': '0' // Make it focusable if it is not already
+        });
+    
+        // Remove role="presentation" if present
+        $('.owl-prev, .owl-next').removeAttr('role');
+      }, 500);
 });
