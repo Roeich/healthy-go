@@ -1,5 +1,8 @@
 $(document).ready(function() {
-    // side menu
+    
+    /* _________________ start home page _________________ */
+    
+    // ... side menu
     $(".menu_toggleBtn,.header_backDrop").click(function() {
         $(".header").toggleClass("active_header");
     });
@@ -23,6 +26,7 @@ $(document).ready(function() {
             }
         }
     });
+    
     // ... testimonials slider
     $(".testimonials-slider").owlCarousel({
         items:1,
@@ -32,6 +36,21 @@ $(document).ready(function() {
         dots:false
     });
 
+    // loading youtube video dynamically
+    $('.video-load-button').on('click', function() {
+        var videoBox = $(this).closest('.video-box');
+        var iframeSrc = videoBox.data('iframe-src');
+        var iframe = $('<iframe>', {
+          src: iframeSrc,
+          width: '560',
+          height: '315',
+          allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+          allowfullscreen: true,
+          title: 'Introduction Video',
+          loading: 'lazy' // Lazy loading for the iframe
+        });
+        videoBox.html(iframe);
+    });
     // increasing page Accessibility
     setTimeout(function() {
         $('.owl-prev').attr({
@@ -45,26 +64,6 @@ $(document).ready(function() {
         $('.owl-prev, .owl-next').removeAttr('role');
     }, 500);
 
-    // play button
-    $('.video-load-button').on('click', function() {
-        // Get the parent video box
-        var videoBox = $(this).closest('.video-box');
-        
-        // Get the iframe source from the data attribute
-        var iframeSrc = videoBox.data('iframe-src');
+    /* _________________ end home page _________________ */
     
-        // Create the iframe element
-        var iframe = $('<iframe>', {
-          src: iframeSrc,
-          width: '560',
-          height: '315',
-          allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
-          allowfullscreen: true,
-          title: 'Introduction Video',
-          loading: 'lazy' // Lazy loading for the iframe
-        });
-    
-        // Clear the placeholder and append the iframe
-        videoBox.html(iframe);
-    });
 });
