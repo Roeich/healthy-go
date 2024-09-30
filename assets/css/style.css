@@ -209,6 +209,9 @@ h1,h2,h3,h4,h5,h6{
 .header_backDrop{
   display: none;
 }
+.menu_toggleBtn{
+  font-size: 24px;
+}
 .header .navbar-nav {
 }
 .header .nav-link {
@@ -223,6 +226,7 @@ h1,h2,h3,h4,h5,h6{
 .header .nav-link.active{
   font-weight: 500;
 }
+
 
 @media (max-width: 1199.98px) {
   .header_navContent {
@@ -261,7 +265,7 @@ h1,h2,h3,h4,h5,h6{
     margin-bottom: 12px;
   }
   .header .nav-link {
-    margin-left: 0px;
+    margin: 0px;
     padding: 8px !important;
     border-radius: 50rem;
     text-align: center;
