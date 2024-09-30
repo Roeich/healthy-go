@@ -508,7 +508,7 @@ h1,h2,h3,h4,h5,h6{
   max-width: 100%;
   margin-bottom: 1.75rem;
 }
-.healthy-go-benefit h4{
+.healthy-go-benefit h3{
   font-size: var(--fs_22);
   font-family: var(--ff_roboto);
   font-weight: 800;
