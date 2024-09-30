@@ -32,18 +32,16 @@ $(document).ready(function() {
         dots:false
     });
 
+    // increasing page Accessibility
     setTimeout(function() {
         $('.owl-prev').attr({
           'aria-label': 'Previous slide',
-          'tabindex': '0' // Make it focusable if it is not already
+          'tabindex': '0' 
         });
-    
         $('.owl-next').attr({
           'aria-label': 'Next slide',
-          'tabindex': '0' // Make it focusable if it is not already
+          'tabindex': '0' 
         });
-    
-        // Remove role="presentation" if present
         $('.owl-prev, .owl-next').removeAttr('role');
-      }, 500);
+    }, 500);
 });
