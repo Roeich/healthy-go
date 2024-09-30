@@ -44,4 +44,27 @@ $(document).ready(function() {
         });
         $('.owl-prev, .owl-next').removeAttr('role');
     }, 500);
+
+    // play button
+    $('.video-load-button').on('click', function() {
+        // Get the parent video box
+        var videoBox = $(this).closest('.video-box');
+        
+        // Get the iframe source from the data attribute
+        var iframeSrc = videoBox.data('iframe-src');
+    
+        // Create the iframe element
+        var iframe = $('<iframe>', {
+          src: iframeSrc,
+          width: '560',
+          height: '315',
+          allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture',
+          allowfullscreen: true,
+          title: 'Introduction Video',
+          loading: 'lazy' // Lazy loading for the iframe
+        });
+    
+        // Clear the placeholder and append the iframe
+        videoBox.html(iframe);
+    });
 });
