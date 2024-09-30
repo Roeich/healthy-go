@@ -364,6 +364,11 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
   }
 }
+@media(max-width:575.98px){
+  .hero-section{
+    background-image: url("../img/home/kitchen-sm.webp");
+  }
+}
 /* ... end hero section ... */
 
 /* ... start customer info section ... */

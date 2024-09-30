@@ -75,7 +75,11 @@
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2">
                         <div class="hero-image-box">
-                            <img class="hero-image img-fluid w-100" src="assets/img/home/hero-img.webp" alt="hero">
+                            <!-- <img class="hero-image img-fluid w-100" src="assets/img/home/hero-img.webp" alt="hero"> -->
+                            <picture>
+                                <source media="(min-width:576px)" srcset="assets/img/home/hero-img.webp">
+                                <img class="hero-image img-fluid w-100" src="assets/img/home/hero-img-sm.webp" alt="hero image">
+                            </picture>
                         </div>
                     </div>
                 </div>
