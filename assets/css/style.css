@@ -123,14 +123,14 @@ h1,h2,h3,h4,h5,h6{
   --bs-btn-disabled-border-color: var(--bg_primary);
 }
 .btn-secondary{
-  --bs-btn-bg: var(--bg_secondary);
-  --bs-btn-border-color: var(--bg_secondary);
-  --bs-btn-hover-bg: var(--bg_secondary2);
-  --bs-btn-hover-border-color: var(--bg_secondary2);
-  --bs-btn-active-bg: var(--bg_secondary2);
-  --bs-btn-active-border-color: var(--bg_secondary2);
-  --bs-btn-disabled-bg: var(--bg_secondary);
-  --bs-btn-disabled-border-color: var(--bg_secondary);
+  --bs-btn-bg: var(--bg_secondary2);
+  --bs-btn-border-color: var(--bg_secondary2);
+  --bs-btn-hover-bg: var(--bg_secondary);
+  --bs-btn-hover-border-color: var(--bg_secondary);
+  --bs-btn-active-bg: var(--bg_secondary);
+  --bs-btn-active-border-color: var(--bg_secondary);
+  --bs-btn-disabled-bg: var(--bg_secondary2);
+  --bs-btn-disabled-border-color: var(--bg_secondary2);
 }
 
 @media(min-width:1200px){
