@@ -452,10 +452,10 @@ h1,h2,h3,h4,h5,h6{
   .customers-image {
     width: 10rem;
   }
-  .customer-count {
+  .customer-count span:first-child {
     font-size: var(--fs_72);
   }
-  .customer-count span {
+  .customer-count span:last-child {
     font-size: var(--fs_36);
   }
   .customer-description {
@@ -463,7 +463,7 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 @media(max-width:575.98px){
-  .customer-count {
+  .customer-count span:first-child {
     font-size: var(--fs_47);
   }
 }
