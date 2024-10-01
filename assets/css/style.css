@@ -342,6 +342,9 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 @media(max-width:991.98px){
+  .hero-section::after{
+    display: none;
+  }
   .hero-section::before {
     height: 60%;
     width: 100%;
