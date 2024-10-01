@@ -27,31 +27,34 @@
   --ff_roboto: "Roboto", sans-serif;
   --ff_abhaya_libre: "Abhaya Libre", serif;
 
-  --fs_110:6.9356rem;
-  --fs_103:6.4688rem;
-  --fs_93:5.82rem;
-  --fs_80:5.0181rem;
-  --fs_72:4.5012rem;
-  --fs_70:4.4006rem;
-  --fs_56:3.5463rem;
-  --fs_49:3.0906rem;
-  --fs_47:2.9775rem;
-  --fs_44:2.8013rem;
-  --fs_39:2.4431rem;
-  --fs_36:2.3106rem;
-  --fs_32:2.0494rem;
-  --fs_31:1.9375rem;
-  --fs_30:1.8694rem;
-  --fs_26:1.635rem;
-  --fs_24:1.5163rem;
-  --fs_22:1.4031rem;
-  --fs_21:1.33rem;
+  --fs_110: 3.9rem;
+  --fs_103: 3.8rem;
+  --fs_93: 3.4rem;
+  --fs_80: 3rem;
+  --fs_72: 2.6rem;
+  --fs_70: 2.4rem;
+  --fs_56: 2.2rem;
+  --fs_49: 1.8rem;
+  --fs_47: 1.7rem;
+  --fs_44: 1.6rem;
+  --fs_39: 1.55rem;
+  --fs_36: 1.50rem;
+  --fs_32: 1.45rem;
+  --fs_31: 1.35rem;
+  --fs_30: 1.32rem;
+  --fs_26: 1.31rem;
+  --fs_24: 1.31rem;
+  --fs_22: 1.25rem;
+  --fs_21: 1.22rem;
   --fs_19:1.2056rem;
   --fs_18:1.0862rem;
   --fs_16:1.0337rem;
   --fs_15:0.9706rem;
   --fs_14:0.9038rem;
   --fs_13:0.8662rem;
+}
+html{
+  font-size: 11px;
 }
 body {
   font-family: var(--ff_roboto);
@@ -133,25 +136,7 @@ h1,h2,h3,h4,h5,h6{
   --bs-btn-disabled-border-color: var(--bg_secondary2);
 }
 
-@media(min-width:1200px){
-  .container{
-    max-width: 112.375rem; /* 1774px */
-  }
-  .container_md{
-    max-width: 87.375rem; /* 1374px */
-  }
-}
-@media(max-width:1819.98px){
-  html {
-    font-size: 12px;
-  }
-}
-@media(max-width:1399.98px){
-  html {
-    font-size: 11px;
-  }
-}
-@media(max-width:1199.98px){
+@media(min-width:576px){
   :root {
     --fs_110: 5rem;
     --fs_103: 4.8rem;
@@ -165,27 +150,43 @@ h1,h2,h3,h4,h5,h6{
     --fs_44: 2.5rem;
   }
 }
-@media(max-width:575.98px){
-  :root {
-    --fs_110: 3.9rem;
-    --fs_103: 3.8rem;
-    --fs_93: 3.4rem;
-    --fs_80: 3rem;
-    --fs_72: 2.6rem;
-    --fs_70: 2.4rem;
-    --fs_56: 2.2rem;
-    --fs_49: 1.8rem;
-    --fs_47: 1.7rem;
-    --fs_44: 1.6rem;
-    --fs_39: 1.55rem;
-    --fs_36: 1.50rem;
-    --fs_32: 1.45rem;
-    --fs_31: 1.35rem;
-    --fs_30: 1.32rem;
-    --fs_26: 1.31rem;
-    --fs_24: 1.31rem;
-    --fs_22: 1.25rem;
-    --fs_21: 1.22rem;
+@media(min-width:1200px){
+  :root{
+    --fs_110:6.9356rem;
+    --fs_103:6.4688rem;
+    --fs_93:5.82rem;
+    --fs_80:5.0181rem;
+    --fs_72:4.5012rem;
+    --fs_70:4.4006rem;
+    --fs_56:3.5463rem;
+    --fs_49:3.0906rem;
+    --fs_47:2.9775rem;
+    --fs_44:2.8013rem;
+    --fs_39:2.4431rem;
+    --fs_36:2.3106rem;
+    --fs_32:2.0494rem;
+    --fs_31:1.9375rem;
+    --fs_30:1.8694rem;
+    --fs_26:1.635rem;
+    --fs_24:1.5163rem;
+    --fs_22:1.4031rem;
+    --fs_21:1.33rem;
+  }
+  .container{
+    max-width: 112.375rem; /* 1774px */
+  }
+  .container_md{
+    max-width: 87.375rem; /* 1374px */
+  }
+}
+@media(min-width:1400px){
+  html {
+    font-size: 12px;
+  }
+}
+@media(min-width:1820px){
+  html {
+    font-size: 16px;
   }
 }
 @media(max-width:575.98px){
@@ -291,7 +292,7 @@ h1,h2,h3,h4,h5,h6{
 .hero-section{
   position: relative;
   background-color: var(--bg_light2);
-  background-image: url("../img/home/kitchen.webp");
+  background-image: url("../img/home/kitchen-sm.webp");
   background-size: cover;
 }
 .hero-section::before,
@@ -333,6 +334,11 @@ h1,h2,h3,h4,h5,h6{
 .hero-image{
 
 }
+@media(min-width:576px){
+  .hero-section{
+    background-image: url("../img/home/kitchen.webp");
+  }
+}
 @media(max-width:1199.98px){
   .hero-title {
     font-size: var(--fs_93);
@@ -367,11 +373,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
   }
 }
-@media(max-width:575.98px){
-  .hero-section{
-    background-image: url("../img/home/kitchen-sm.webp");
-  }
-}
+
 /* ... end hero section ... */
 
 /* ... start customer info section ... */
