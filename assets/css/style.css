@@ -291,7 +291,7 @@ h1,h2,h3,h4,h5,h6{
 .hero-section{
   position: relative;
   background-color: var(--bg_light2);
-  background-image: url("../img/home/kitchen.webp");
+  background-image: url("../img/home/kitchen-sm.webp");
   background-size: cover;
 }
 .hero-section::before,
@@ -333,6 +333,11 @@ h1,h2,h3,h4,h5,h6{
 .hero-image{
 
 }
+@media(min-width:576px){
+  .hero-section{
+    background-image: url("../img/home/kitchen.webp");
+  }
+}
 @media(max-width:1199.98px){
   .hero-title {
     font-size: var(--fs_93);
@@ -364,11 +369,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
   }
 }
-@media(max-width:575.98px){
-  .hero-section{
-    background-image: url("../img/home/kitchen-sm.webp");
-  }
-}
+
 /* ... end hero section ... */
 
 /* ... start customer info section ... */
