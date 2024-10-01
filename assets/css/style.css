@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
-@font-face {
+/* @font-face {
   font-family: "PS Haute";
   src: url("../fonts/PS-Haute-Regular.ttf");
-}
+} */
 :root {
   --c_primary:#1E4735;
   --c_primary2:#1F4836;
@@ -1208,3 +1208,10 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 /* ... end footer area ... */
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@font-face {
+  font-family: "PS Haute";
+  src: url("../fonts/PS-Haute-Regular.ttf");
+}
