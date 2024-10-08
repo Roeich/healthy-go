@@ -30,6 +30,7 @@
   --fs_110:6.9356rem;
   --fs_103:6.4688rem;
   --fs_93:5.82rem;
+  --fs_88:5.5rem;
   --fs_80:5.0181rem;
   --fs_72:4.5012rem;
   --fs_70:4.4006rem;
@@ -76,36 +77,46 @@ h1,h2,h3,h4,h5,h6{
 .ff_roboto{font-family: var(--ff_roboto);}
 .ff_abhaya_libre{font-family: var(--ff_abhaya_libre);}
 
-.fs_110{font-size: var(--fs_110);}
-.fs_103{font-size: var(--fs_103);}
-.fs_93{font-size: var(--fs_93);}
-.fs_80{font-size: var(--fs_80);}
-.fs_72{font-size: var(--fs_72);}
-.fs_70{font-size: var(--fs_70);}
-.fs_56{font-size: var(--fs_56);}
-.fs_49{font-size: var(--fs_49);}
-.fs_47{font-size: var(--fs_47);}
-.fs_44{font-size: var(--fs_44);}
-.fs_39{font-size: var(--fs_39);}
-.fs_36{font-size: var(--fs_36);}
-.fs_32{font-size: var(--fs_32);}
-.fs_31{font-size: var(--fs_31);}
-.fs_30{font-size: var(--fs_30);}
-.fs_26{font-size: var(--fs_26);}
-.fs_24{font-size: var(--fs_24);}
-.fs_22{font-size: var(--fs_22);}
-.fs_21{font-size: var(--fs_21);}
-.fs_19{font-size: var(--fs_19);}
-.fs_18{font-size: var(--fs_18);}
-.fs_16{font-size: var(--fs_16);}
-.fs_15{font-size: var(--fs_15);}
-.fs_14{font-size: var(--fs_14);}
-.fs_13{font-size: var(--fs_13);}
+.fs_110{font-size: var(--fs_110) !important;}
+.fs_103{font-size: var(--fs_103) !important;}
+.fs_93{font-size: var(--fs_93) !important;}
+.fs_88{font-size: var(--fs_88) !important;}
+.fs_80{font-size: var(--fs_80) !important;}
+.fs_72{font-size: var(--fs_72) !important;}
+.fs_70{font-size: var(--fs_70) !important;}
+.fs_56{font-size: var(--fs_56) !important;}
+.fs_49{font-size: var(--fs_49) !important;}
+.fs_47{font-size: var(--fs_47) !important;}
+.fs_44{font-size: var(--fs_44) !important;}
+.fs_39{font-size: var(--fs_39) !important;}
+.fs_36{font-size: var(--fs_36) !important;}
+.fs_32{font-size: var(--fs_32) !important;}
+.fs_31{font-size: var(--fs_31) !important;}
+.fs_30{font-size: var(--fs_30) !important;}
+.fs_26{font-size: var(--fs_26) !important;}
+.fs_24{font-size: var(--fs_24) !important;}
+.fs_22{font-size: var(--fs_22) !important;}
+.fs_21{font-size: var(--fs_21) !important;}
+.fs_19{font-size: var(--fs_19) !important;}
+.fs_18{font-size: var(--fs_18) !important;}
+.fs_16{font-size: var(--fs_16) !important;}
+.fs_15{font-size: var(--fs_15) !important;}
+.fs_14{font-size: var(--fs_14) !important;}
+.fs_13{font-size: var(--fs_13) !important;}
 
 .btn{
   font-family: var(--ff_abhaya_libre);
   font-size: var(--fs_21);
   padding: 0.625rem 1.875rem !important;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn_2{
+  font-size: var(--fs_26);
+  font-family: var(--ff_roboto);
+  -webkit-box-shadow: inset 0px 10.2241px 10.2241px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 10.2241px 10.2241px rgba(0, 0, 0, 0.25);
 }
 .btn:active{
   -webkit-transform: scale(0.95);
@@ -156,6 +167,7 @@ h1,h2,h3,h4,h5,h6{
     --fs_110: 5rem;
     --fs_103: 4.8rem;
     --fs_93: 4.4rem;
+    --fs_88: 4.2rem;
     --fs_80: 4rem;
     --fs_72: 3.6rem;
     --fs_70: 3.4rem;
@@ -170,6 +182,7 @@ h1,h2,h3,h4,h5,h6{
     --fs_110: 3.9rem;
     --fs_103: 3.8rem;
     --fs_93: 3.4rem;
+    --fs_88: 3.2rem;
     --fs_80: 3rem;
     --fs_72: 2.6rem;
     --fs_70: 2.4rem;
@@ -194,6 +207,7 @@ h1,h2,h3,h4,h5,h6{
     padding-right: 16px;
   }
 }
+/* _____________________ start home page _____________________ */
 /* ... start header section ... */
 .header {
   padding: 1.5rem 0rem;
@@ -291,8 +305,10 @@ h1,h2,h3,h4,h5,h6{
 .hero-section{
   position: relative;
   background-color: var(--bg_light2);
-  background-image: url("../img/home/kitchen.webp");
   background-size: cover;
+}
+.hero-section-1{
+  background-image: url("../img/home/kitchen.webp");
 }
 .hero-section::before,
 .hero-section::after{
@@ -329,6 +345,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .hero-image-box{
 
+}
+.hero-image-box picture{
+  display: block;
 }
 .hero-image{
 
@@ -368,7 +387,7 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 @media(max-width:575.98px){
-  .hero-section{
+  .hero-section-1{
     background-image: url("../img/home/kitchen-sm.webp");
   }
 }
@@ -948,9 +967,46 @@ h1,h2,h3,h4,h5,h6{
   font-size: var(--fs_22);
   font-weight: 300;
 }
+.meal-request{
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--c_light2);
+  background: rgba(15, 46, 32, 0.65);
+  border-radius: 0.5208em;
+  padding: 0.6667em 1em;
+  margin-bottom: 0.6em;
+}
+.meal-request-title{
+  font-weight: 300;
+}
+.meal-request-title span{
+  font-weight: 500;
+}
+.meal-request-options{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.meal-request-option{
+  width: 25%;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+.meal-request-option div{
+  padding-top: 0.5em;
+  font-size: 0.5em;
+}
 @media(max-width:991.98px){
   .meal-info-details {
     font-size: var(--fs_18);
+  }
+  .meal-request{
+    font-size: 2rem;
   }
 }
 @media(max-width:767.98px){
@@ -966,10 +1022,16 @@ h1,h2,h3,h4,h5,h6{
   .meal-info-item-1 {
     top: 1rem;
   }
+  .meal-request{
+    font-size: 1.5rem;
+  }
 }
 @media(max-width:575.98px) {
   .meal-info-box {
     padding-bottom: 105%;
+  }
+  .meal-request{
+    font-size: 1.2rem;
   }
 }
 @media(max-width:399.98px) {
@@ -1215,6 +1277,119 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 /* ... end footer area ... */
+
+/* _____________________ end home page _____________________ */
+
+/* _____________________ start diabet kolestrol page _____________________ */
+
+/* ... start hero section ... */
+@media(min-width:992px){
+  .hero-section-2 .hero-title{
+    margin-right: -17%
+  }
+}
+/* ... end hero section ... */
+
+/* ... start Kenapa Makan Sehat.. section ... */
+.reason-section{
+  background-color: var(--bg_light2);
+}
+.reason-content{
+  padding: 4.5rem 0rem;
+}
+.reason-section-title{
+  font-size: 3.5rem;
+  margin-bottom: 1em;
+}
+.reason-items{
+  list-style: none;
+  padding-left: 3rem;
+  margin: 0px;
+}
+.reason-item{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom:3.2rem;
+}
+.reason-item:last-child{
+  margin-bottom: 0rem;
+}
+.reason-icon{
+  font-size: 4.5rem;
+  width: 1em;
+  min-width: 1em;
+  height: 1em;
+  margin-right: 0.3902em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reason-title{
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 800;
+  font-family: var(--ff_roboto);
+  margin-bottom: 0px;
+}
+.reason-description{
+  font-size: 1.6rem;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+@media(max-width:1199.98px){
+  .reason-content{
+    padding: 3.5rem 0rem;
+  }
+  .reason-section-title{
+    font-size: 2.8rem;
+  }
+  .reason-items{
+    padding-left: 2.5rem;
+  }
+  .reason-item{
+    margin-bottom:2.5rem;
+  }
+  .reason-icon{
+    font-size: 4.2rem;
+  }
+  .reason-title{
+    font-size: 2.2rem;
+  }
+  .reason-description{
+    font-size: 1.4rem;
+  }
+}
+@media(max-width:991.98px){
+  .reason-content{
+    padding: 3.2rem 0rem;
+  }
+  .reason-section-title{
+    font-size: 2.2rem;
+  }
+  .reason-items{
+    padding-left: 2rem;
+  }
+  .reason-item{
+    margin-bottom:2rem;
+  }
+  .reason-icon{
+    font-size: 3.5rem;
+  }
+  .reason-title{
+    font-size: 2rem;
+  }
+  .reason-description{
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:767.98px){
+  .reason-content {
+    padding: 0rem 0rem 3.2rem;
+  }
+}
+/* ... end Kenapa Makan Sehat.. section ... */
+
+/* _____________________ end diabet kolestrol page _____________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
