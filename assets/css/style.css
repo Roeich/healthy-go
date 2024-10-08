@@ -344,13 +344,36 @@ h1,h2,h3,h4,h5,h6{
   font-size: var(--fs_39);
 }
 .hero-image-box{
-
+  display: block;
+  position: relative;
+  padding-bottom: 76.838%;
 }
 .hero-image-box picture{
   display: block;
 }
+.hero-image-box img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+}
 .hero-image{
 
+}
+
+.hero-section-1{
+
+}
+.hero-section-2 .hero-image-box{
+  padding-bottom: 91.9444%;
+}
+@media(min-width:992px){
+  .hero-section-2 .hero-title{
+    margin-right: -17%
+  }
 }
 @media(max-width:1199.98px){
   .hero-title {
@@ -1281,15 +1304,6 @@ h1,h2,h3,h4,h5,h6{
 /* _____________________ end home page _____________________ */
 
 /* _____________________ start diabet kolestrol page _____________________ */
-
-/* ... start hero section ... */
-@media(min-width:992px){
-  .hero-section-2 .hero-title{
-    margin-right: -17%
-  }
-}
-/* ... end hero section ... */
-
 /* ... start Kenapa Makan Sehat.. section ... */
 .reason-section{
   background-color: var(--bg_light2);
