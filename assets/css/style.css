@@ -215,6 +215,7 @@ h1,h2,h3,h4,h5,h6{
   padding: 1.5rem 0rem;
   background-color: var(--bg_white);
   font-family: var(--ff_abhaya_libre);
+  border-bottom: 1px solid var(--c_light2);
 }
 .header_logo {
   width: 6rem;
@@ -1567,6 +1568,15 @@ h1,h2,h3,h4,h5,h6{
 }
 /* ... end diet programs section ... */
 /* _____________________ end lean muscle page _____________________ */
+
+/* _____________________ start tnc page _____________________ */
+.tnc_infoList{
+  font-size: var(--fs_24);
+}
+.tnc_infoList>li{
+  margin-bottom: 0.5em;
+}
+/* _____________________ end tnc page _____________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
