@@ -1422,8 +1422,8 @@ h1,h2,h3,h4,h5,h6{
 /* ... start hero section ... */
 .hero-section-3{
   color: var(--c_white);
-  background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg.webp");
   background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg.webp");
   background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
 }
 .hero-section-3::before,
@@ -1446,8 +1446,8 @@ h1,h2,h3,h4,h5,h6{
 }
 @media(max-width:575.98px){
   .hero-section-3{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg-sm.webp");
     background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg-sm.webp");
     background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
   }
 }
