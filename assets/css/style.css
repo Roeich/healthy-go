@@ -1308,7 +1308,7 @@ h1,h2,h3,h4,h5,h6{
 /* _____________________ start diabet kolestrol page _____________________ */
 /* ... start hero section ... */
 .hero-section-2 .hero-image-box{
-  padding-bottom: 91.9444%;
+  padding-bottom: 91%;
 }
 @media(min-width:992px){
   .hero-section-2 .hero-title{
