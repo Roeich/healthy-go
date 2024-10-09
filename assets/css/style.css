@@ -311,7 +311,8 @@ h1,h2,h3,h4,h5,h6{
   background-size: cover;
 }
 .hero-section-1{
-  background-image: url("../img/home/kitchen.webp");
+  /* background-image: url("../img/home/kitchen.webp"); */
+  background-image: var(--bg_lg);
 }
 .hero-section::before,
 .hero-section::after{
@@ -404,8 +405,11 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 @media(max-width:575.98px){
-  .hero-section-1{
+  /* .hero-section-1{
     background-image: url("../img/home/kitchen-sm.webp");
+  } */
+  .hero-section-1{
+    background-image: var(--bg_sm);
   }
 }
 /* ... end hero section ... */
@@ -512,7 +516,8 @@ h1,h2,h3,h4,h5,h6{
 .why-healthy-go{
   --grid_color:var(--bg_light);
   background-color: var(--bg_light2);
-  background-image: url("../img/home/benefits-bg.webp");
+  /* background-image: url("../img/home/benefits-bg.webp"); */
+  background-image: var(--bg_lg);
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 79.375rem;
@@ -1422,9 +1427,9 @@ h1,h2,h3,h4,h5,h6{
 /* ... start hero section ... */
 .hero-section-3{
   color: var(--c_white);
-  background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
-  background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg.webp");
-  background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
+  background-image: -o-linear-gradient(top,#000000E0,#000000E0), var(--bg_lg);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), var(--bg_lg);
+  background-image: linear-gradient(to bottom,#000000E0,#000000E0), var(--bg_lg);
 }
 .hero-section-3::before,
 .hero-section-3::after{
@@ -1446,9 +1451,9 @@ h1,h2,h3,h4,h5,h6{
 }
 @media(max-width:575.98px){
   .hero-section-3{
-    background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
-    background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg-sm.webp");
-    background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
+    background-image: -o-linear-gradient(top,#000000E0,#000000E0), var(--bg_sm);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), var(--bg_sm);
+    background-image: linear-gradient(to bottom,#000000E0,#000000E0), var(--bg_sm);
   }
 }
 /* ... end hero section ... */
