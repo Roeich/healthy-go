@@ -18,6 +18,7 @@
   --bg_primary3:#0F2E20;
   --bg_secondary:#EF5947;
   --bg_secondary2:#c23829;
+  --bg_dark:#03150D;
   --bg_light:#FFFAF8;
   --bg_light2:#F8EFEA;
   --bg_grayLt:#d9d9d957;
@@ -70,6 +71,7 @@ h1,h2,h3,h4,h5,h6{
 .bg_primary2{background-color: var(--bg_primary2);}
 .bg_primary3{background-color: var(--bg_primary3);}
 .bg_secondary{background-color: var(--bg_secondary);}
+.bg_dark{background-color: var(--bg_dark) !important;}
 .bg_light{background-color: var(--bg_light);}
 .bg_grayLt{background-color: var(--bg_grayLt);}
 
@@ -357,24 +359,15 @@ h1,h2,h3,h4,h5,h6{
   left: 0px;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: bottom center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: bottom center;
+     object-position: bottom center;
 }
 .hero-image{
 
 }
 
-.hero-section-1{
-
-}
-.hero-section-2 .hero-image-box{
-  padding-bottom: 91.9444%;
-}
-@media(min-width:992px){
-  .hero-section-2 .hero-title{
-    margin-right: -17%
-  }
-}
 @media(max-width:1199.98px){
   .hero-title {
     font-size: var(--fs_93);
@@ -516,6 +509,7 @@ h1,h2,h3,h4,h5,h6{
 
 /* ... start Why Healthy Go section ... */
 .why-healthy-go{
+  --grid_color:var(--bg_light);
   background-color: var(--bg_light2);
   background-image: url("../img/home/benefits-bg.webp");
   background-repeat: no-repeat;
@@ -524,16 +518,16 @@ h1,h2,h3,h4,h5,h6{
   padding-bottom: 3rem;
 }
 .healthy-go-title{
-  -webkit-box-shadow: 0vw 0vw 0vw 200vw var(--bg_light);
-          box-shadow: 0vw 0vw 0vw 200vw var(--bg_light);
+  -webkit-box-shadow: 0vw 0vw 0vw 200vw var(--grid_color);
+          box-shadow: 0vw 0vw 0vw 200vw var(--grid_color);
   -webkit-clip-path: inset(0px -100vw 0px -100vw);
           clip-path: inset(0px -100vw 0px -100vw);
   padding: 2.5rem 0rem;
   margin: 0px;
-  background-color: var(--bg_light);
+  background-color: var(--grid_color);
 }
 .healthy-go-benefits{
-
+  
 }
 .healthy-go-benefit{
   margin: auto;
@@ -545,17 +539,17 @@ h1,h2,h3,h4,h5,h6{
 .healthy-go-benefits>*:nth-child(6n+4),
 .healthy-go-benefits>*:nth-child(6n+5),
 .healthy-go-benefits>*:nth-child(6n+6) {
-    background-color: var(--bg_light);
+    background-color: var(--grid_color);
 }
 .healthy-go-benefits>*:nth-child(6n+4){
-  -webkit-box-shadow: -100vw 0vw 0vw 100vw var(--bg_light);
-          box-shadow: -100vw 0vw 0vw 100vw var(--bg_light);
+  -webkit-box-shadow: -100vw 0vw 0vw 100vw var(--grid_color);
+          box-shadow: -100vw 0vw 0vw 100vw var(--grid_color);
   -webkit-clip-path: inset(0px 0vw 0px -100vw);
           clip-path: inset(0px 0vw 0px -100vw)
 }
 .healthy-go-benefits>*:nth-child(6n+6){
-  -webkit-box-shadow: 100vw 0vw 0vw 100vw var(--bg_light);
-          box-shadow: 100vw 0vw 0vw 100vw var(--bg_light);
+  -webkit-box-shadow: 100vw 0vw 0vw 100vw var(--grid_color);
+          box-shadow: 100vw 0vw 0vw 100vw var(--grid_color);
   -webkit-clip-path: inset(0px -100vw 0px 0vw);
           clip-path: inset(0px -100vw 0px 0vw)
 }
@@ -596,19 +590,19 @@ h1,h2,h3,h4,h5,h6{
   }
   .healthy-go-benefits > *:nth-child(4n+3),
   .healthy-go-benefits > *:nth-child(4n+4) {
-      background-color: var(--bg_light) !important;
+      background-color: var(--grid_color) !important;
   }
 
   .healthy-go-benefits > *:nth-child(4n+3) {
-      -webkit-box-shadow: -100vw 0 0 100vw var(--bg_light) !important;
-              box-shadow: -100vw 0 0 100vw var(--bg_light) !important;
+      -webkit-box-shadow: -100vw 0 0 100vw var(--grid_color) !important;
+              box-shadow: -100vw 0 0 100vw var(--grid_color) !important;
       -webkit-clip-path: inset(0 0 0 -100vw) !important;
               clip-path: inset(0 0 0 -100vw) !important; 
   }
 
   .healthy-go-benefits > *:nth-child(4n+4) {
-      -webkit-box-shadow: 100vw 0 0 100vw var(--bg_light) !important;
-              box-shadow: 100vw 0 0 100vw var(--bg_light) !important;
+      -webkit-box-shadow: 100vw 0 0 100vw var(--grid_color) !important;
+              box-shadow: 100vw 0 0 100vw var(--grid_color) !important;
       -webkit-clip-path: inset(0 -100vw 0 0) !important;
               clip-path: inset(0 -100vw 0 0) !important; 
   }
@@ -627,21 +621,28 @@ h1,h2,h3,h4,h5,h6{
             clip-path: none !important;
   }
   .healthy-go-benefits > *:nth-child(2n){
-    background-color: var(--bg_light) !important;
+    background-color: var(--grid_color) !important;
   }
 
-  .healthy-go-benefits > *:nth-child(2n) {
-      -webkit-box-shadow: -100vw 0 0 100vw var(--bg_light) !important;
-              box-shadow: -100vw 0 0 100vw var(--bg_light) !important;
+  /* .healthy-go-benefits > *:nth-child(2n) {
+      -webkit-box-shadow: -100vw 0 0 100vw var(--grid_color) !important;
+              box-shadow: -100vw 0 0 100vw var(--grid_color) !important;
       -webkit-clip-path: inset(0 0 0 -100vw) !important;
               clip-path: inset(0 0 0 -100vw) !important; 
   }
 
   .healthy-go-benefits > *:nth-child(2n) {
-      -webkit-box-shadow: 100vw 0 0 100vw var(--bg_light) !important;
-              box-shadow: 100vw 0 0 100vw var(--bg_light) !important;
+      -webkit-box-shadow: 100vw 0 0 100vw var(--grid_color) !important;
+              box-shadow: 100vw 0 0 100vw var(--grid_color) !important;
       -webkit-clip-path: inset(0 -100vw 0 0) !important;
               clip-path: inset(0 -100vw 0 0) !important; 
+  } */
+
+  .healthy-go-benefits > *:nth-child(2n) {
+      -webkit-box-shadow: 0 0 0 100vw var(--grid_color) !important;
+              box-shadow: 0 0 0 100vw var(--grid_color) !important;
+      -webkit-clip-path: inset(0 -100vw 0 -100vw) !important;
+              clip-path: inset(0 -100vw 0 -100vw) !important; 
   }
 }
 /* ... end Why Healthy Go section ... */
@@ -1304,6 +1305,17 @@ h1,h2,h3,h4,h5,h6{
 /* _____________________ end home page _____________________ */
 
 /* _____________________ start diabet kolestrol page _____________________ */
+/* ... start hero section ... */
+.hero-section-2 .hero-image-box{
+  padding-bottom: 91.9444%;
+}
+@media(min-width:992px){
+  .hero-section-2 .hero-title{
+    margin-right: -17%
+  }
+}
+/* ... end hero section ... */
+
 /* ... start Kenapa Makan Sehat.. section ... */
 .reason-section{
   background-color: var(--bg_light2);
@@ -1404,6 +1416,157 @@ h1,h2,h3,h4,h5,h6{
 /* ... end Kenapa Makan Sehat.. section ... */
 
 /* _____________________ end diabet kolestrol page _____________________ */
+
+/* _____________________ start lean muscle page _____________________ */
+/* ... start hero section ... */
+.hero-section-3{
+  color: var(--c_white);
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg.webp");
+  background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
+  background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg.webp");
+}
+.hero-section-3::before,
+.hero-section-3::after{
+  display: none;
+}
+.hero-section-3 .hero-image-box{
+  padding-bottom: 80.968%;
+}
+@media (max-width: 991.98px) {
+  .hero-section-3 .hero-content {
+    padding: 0rem 0rem 8.5rem 0rem;
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-section-3 .hero-content {
+    padding: 0rem 0rem 4rem;
+  }
+}
+@media(max-width:575.98px){
+  .hero-section-3{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#000000E0),to(#000000E0)), url("../img/lean-muscle/hero-bg-sm.webp");
+    background-image: -o-linear-gradient(top,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
+    background-image: linear-gradient(to bottom,#000000E0,#000000E0), url("../img/lean-muscle/hero-bg-sm.webp");
+  }
+}
+/* ... end hero section ... */
+
+/* ... start Kenapa harus join program section ... */
+.join-benefits-section{
+  padding: 5rem 0rem 1.25rem;
+}
+.join-benefits-title{
+  font-size: var(--fs_72);
+  text-align: center;
+  margin-bottom: 0px;
+}
+.join-benefits-subtitle{
+  font-size: var(--fs_49);
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.join-benefits-box{
+  position: relative;
+}
+.join-benefits{
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3.125rem;
+}
+.join-benefit{
+  width: 20%;
+  text-align: center;
+}
+.join-benefit:first-of-type,
+.join-benefit:last-of-type{
+  padding-top: 3em;
+}
+.join-benefit-icon{
+  width: 6.0833em;
+  height: 6.0833em;
+  margin-bottom: 0.6667em;
+  border-radius: 50%;
+  background-color: var(--bg_primary2);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  place-items: center;
+}
+.join-benefit-icon img{
+  width: 4.25em;
+  height: 4.25em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.join-benefit-title{
+  font-size: 1.1667em;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+.join-benefit-desc{
+  font-size: 1em;
+  font-weight: 300;
+}
+.join-benefit-desc i{
+  font-weight: 400;
+}
+.join-benefit-picture{
+  display: block;
+  text-align: center;
+  margin-top: -3.3333rem;
+}
+.join-benefit-image{
+  width: 51%;
+}
+@media(max-width:991.98px){
+  .join-benefits-title {
+    font-size: var(--fs_49);
+  }
+  .join-benefits-subtitle {
+    font-size: var(--fs_39);
+  }
+  .join-benefits {
+    font-size: 1.2rem;
+  }
+}
+@media(max-width:767.98px){
+  .join-benefits {
+    font-size: 1rem;
+  }
+}
+@media(max-width:575.98px){
+  .join-benefits {
+    font-size: 0.9rem;
+  }
+  .join-benefit {
+    width: 22%;
+  }
+}
+/* ... end Kenapa harus join program section ... */
+/* ... start why health go section ... */
+.why-healthy-go-2{
+  --grid_color:var(--bg_dark);
+  color: var(--c_white);
+  background-color: var(--bg_primary2);
+}
+/* ... end why health go section ... */
+
+/* ... start diet programs section ... */
+.diet-programs-section-2{
+  background: var(--bg_dark);
+}
+
+.diet-programs-section-2 .diet-programs-title{
+  color: var(--c_white);
+}
+/* ... end diet programs section ... */
+/* _____________________ end lean muscle page _____________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
